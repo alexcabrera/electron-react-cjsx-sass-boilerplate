@@ -1,7 +1,7 @@
 (
     () ->
         React  = require 'react'
-        Main   = require './main/Main.cjsx'
+        Main   = require './windows/Main.cjsx'
         remote = window.require 'remote'
 
         window.React = React
