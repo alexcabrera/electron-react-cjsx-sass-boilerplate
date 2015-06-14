@@ -1,11 +1,11 @@
 var gulp = require( 'gulp' );
 var browserify = require( 'browserify' );
-var reactify = require( 'reactify' );
+var reactify = require( 'coffee-reactify' );
 var source = require( 'vinyl-source-stream' );
 
 gulp.task( 'browserify', function () {
 	var bundler = browserify( {
-		entries: [ './component/app.js' ],
+		entries: [ './component/app.cjsx' ],
 		transform: [ reactify ]
 	} );
 	return bundler.bundle()

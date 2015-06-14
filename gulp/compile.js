@@ -1,8 +1,10 @@
 var gulp = require( 'gulp' );
 
 gulp.task( 'compile', [
+	'coffee',
+	'cjsx',
 	'browserify',
 	'through',
-	'less',
+	'sass',
 	'install'
 ] );

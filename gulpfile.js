@@ -20,8 +20,6 @@ gulp.task( 'watch-all', function () {
 } );
 
 gulp.task( 'watch-compile-build', runSequence('compile', 'build', 'watch-all') );
-
 gulp.task( 'watch-compile', [ 'build' ], watchAndRecompile );
 gulp.task( 'watch-build', [ 'build' ], watchAndRebuild );
-
 gulp.task( 'default', [ 'watch-compile-build' ] );
