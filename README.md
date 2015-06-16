@@ -1,15 +1,31 @@
-# Electron-React-Boilerplate
-Electron app with React.js
+# Build Electron Applications with React, CJSX, and Sass
 
-![](./docs/screenshot.png)
-# How to develop
-1. `npm i`
-2. `npm start`
-3. open application in build directory
-4. add some react components and styles
-5. reload application (⌘+R)
+This repository is intended to act as scaffolding for Electron applications built on React and authored using CoffeeScript and Sass. CJSX, a CoffeeScript-friendly variant of JSX, is used for defining components.
 
-# Electron api calling
-To call Electron's api, it is necessary to use window.require because, browserify rewrites require statement.
+The project draws heavily from  [Electron-React-Boilerplate](https://github.com/airtoxin/Electron-React-Boilerplate) by [Ryoji Ishii](https://github.com/airtoxin). JavaScript files have been converted into CoffeeScript and the Browserify task runs through a [coffee-reactify](https://github.com/jsdf/coffee-reactify) transform and the directory layout has been modified to provide a little more structure for new projects.
 
-ex) `var remote = window.require( 'remote' );`
+## Getting Started
+
+Download and extract the latest release:
+
+```
+$ wget https://github.com/droptype/electron-react-cjsx-sass-boilerplate/archive/0.1.1.tar.gz
+$ tar zxvf 0.1.1.tar.gz
+$ cd electron-react-cjsx-sass-boilerplate
+```
+
+Install our development dependencies with `npm`:
+
+```
+$ npm install
+```
+
+Initiate build and watch for changes
+
+```
+$ npm start
+```
+
+Now you can navigate to the `./build/<version number>/darwin-x64/` and open _Electron.app_. You'll see something along the lines of this:
+
+![screenshot](./docs/screenshot.png)
