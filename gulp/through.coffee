@@ -1,11 +1,11 @@
-gulp 		= 'gulp'
-browserify 	= 'gulp-browserify'
-rename 		= 'gulp-rename'
+gulp 		= require 'gulp'
+coffee 		= require 'gulp-coffee'
 
 gulp.task 'through', ->
-	gulp.src './App.cjsx', { read: false }
-		.pipe browserify
-			transform	: ['coffee-reactify']
-			extendsion	: ['.cjsx']
-		.pipe rename 'index.html'
-		.pipe gulp.dest './compile'
+
+	gulp.src './index.html'
+		.pipe gulp.dest('./compile')
+
+	gulp.src './index.coffee'
+		.pipe coffee()
+		.pipe gulp.dest('./compile')

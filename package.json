@@ -2,7 +2,7 @@
   "name": "electron-react-cjsx-sass-boilerplate",
   "version": "0.1.0",
   "description": "A starting point for React + CJSX + Sass Electron applications",
-  "main": "index.coffee",
+  "main": "index.js",
   "scripts": {
     "start": "gulp"
   },

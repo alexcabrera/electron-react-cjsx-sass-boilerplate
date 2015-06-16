@@ -9,7 +9,7 @@ watchAndRebuild = () ->
 
 watchAndRecompile = () ->
 	gulp.watch ['./src/**/*'], ['browserify']
-	gulp.watch ['./App.cjsx'], ['through']
+	gulp.watch ['./index.html', './index.coffee'], ['through']
 
 gulp.task 'watch-all', () ->
 	watchAndRecompile()
