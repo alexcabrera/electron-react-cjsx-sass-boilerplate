@@ -2,7 +2,7 @@
 
 This repository is intended to act as scaffolding for Electron applications built on React and authored using CoffeeScript and Sass. CJSX, a CoffeeScript-friendly variant of JSX, is used for defining components.
 
-The project draws heavily from  [Electron-React-Boilerplate](https://github.com/airtoxin/Electron-React-Boilerplate) by [Ryoji Ishii](https://github.com/airtoxin). JavaScript files have been converted into CoffeeScript and the Browserify task runs through a [coffee-reactify](https://github.com/jsdf/coffee-reactify) transform and the directory layout has been modified to provide a little more structure for new projects.
+The project draws heavily from  [Electron-React-Boilerplate](https://github.com/airtoxin/Electron-React-Boilerplate) by [Ryoji Ishii](https://github.com/airtoxin). JavaScript files have been converted into CoffeeScript and the Browserify task runs through a [coffee-reactify](https://github.com/jsdf/coffee-reactify) transform. The directory layout has been modified to provide a little more structure for new projects.
 
 ## Getting Started
 
